@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Weight Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="conv-container" class="col-md-4 offset-md-4">
+                <h1 class="m-2">Weight Converter</h1>
+                <p>Select Weight Unit:</p>
+<!-- Radio Buttons -->
+    <div class="radio-buttons mb-3">
+        <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="unitTypeRadio" class="custom-control-input" onclick="check();" value="pounds">
+            <label class="custom-control-label" for="customRadio1">Pounds</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio2" name="unitTypeRadio" class="custom-control-input" onclick="check();" value="kilograms">
+            <label class="custom-control-label" for="customRadio2">Kilograms</label>
+        </div>
+        <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio3" name="unitTypeRadio" class="custom-control-input" onclick="check();" value="ounces">
+                <label class="custom-control-label" for="customRadio3">Ounces</label>
+            </div>
+
+    </div>
+
+
+<!-- Text Input -->
+                <form>
+                    <div class="form-group" id="inputBox">
+                        <input 
+                        id="Input"
+                        type="number" 
+                        class="form-control form-control-lg" placeholder="Please Select Weight Unit"
+                        >
+                    </div>
+                </form>
+<!-- Card Start-->
+                    <div id="output">
+
+                        <div id="card-1" class="card  mb-4">
+                            <div class="card-block m-2">
+                                <h5 class="card-title" id="output-1-title">Stones: </h5>
+                                <div id="output-1"></div>
+                            </div>
+                        </div>
+
+                        <div id="card-2" class="card mb-4">
+                            <div class="card-block m-2">
+                                <h5 class="card-title" id="output-2-title">Kilograms: </h5>
+                                <div id="output-2"></div>
+                            </div>
+                        </div>
+
+                        <div id="card-3" class="card mb-4">
+                            <div class="card-block m-2">
+                                <h5 class="card-title" id="output-3-title">Ounces:</h5>
+                                <div id="output-3"></div>
+                            </div>
+                        </div>
+                    </div>
+<!-- Card End-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Script -->
+    <script src="weight.js"> 
+        
+    </script>
+
+
+</body>
+</html>

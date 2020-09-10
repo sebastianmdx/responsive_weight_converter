@@ -1,0 +1,28 @@
+body {
+  margin-top: 20px !important;
+  /*  background-color: white !important;
+*/
+  background-image: url(triangle.png) !important;
+}
+
+#card-1 {
+  background-color: #ffa500;
+}
+
+#card-2 {
+  background-color: #f08080;
+}
+
+#card-3 {
+  background-color: #7d93e0;
+}
+
+#conv-container {
+  background-color: #95dbdb;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+#Input {
+  background-color: #bbf0f0;
+}
